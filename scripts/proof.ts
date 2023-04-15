@@ -35,12 +35,12 @@ async function main() {
   const ZKEY_FILE_PATH = "circuits/base.zkey"
 
   const circuitInputs = {
-    accountRoot: "0x27d7d6e3a855c2cff1234b9c249f25c97efaa6e1f67309dbe9f3c1983e3302d6",
+    accountRoot: "0xf7722b1b523044f46cda3cead3408f9023d64b43d1e1a6c9e648c74fe82768",
     certValue: 9527,
     path: [
       "0x2a09a9fd93c590c26b91effbb2499f07e8f7aa12e2b4940a3aed2411cb65e11c",
       "0x231be438cf8d6a322f51a7182ae96fb67aa3a7d1673abecc96955fa51f6d7168",
-      "0x2258b1ae87b52b884ce173eb875bd74d675401aa4dc20c8989f080ce517f4c30"
+      "0x1426f40e9cfe0434cb31c11912ae7d04d7b60f73d78a07b344f7e2b054f01e43"
     ],
     idx: [ 0, 0, 1 ],
     borrowAmount: 100,
@@ -51,7 +51,10 @@ async function main() {
     WASM_FILE_PATH,
     ZKEY_FILE_PATH
   )
-  console.log(proofData)
+  console.log(`["${proofData.a[0]._hex}", "${proofData.a[1]._hex}"]`)
+  console.log(`[["${proofData.b[0][0]._hex}", "${proofData.b[0][1]._hex}"],["${proofData.b[1][0]._hex}", "${proofData.b[1][1]._hex}"]]`)
+  console.log(`["${proofData.c[0]._hex}", "${proofData.c[1]._hex}"]`)
+  console.log(`["${proofData.inputs[0]._hex}", "${proofData.inputs[1]._hex}"]`)
 }
 
 main()
