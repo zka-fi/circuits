@@ -6,7 +6,8 @@
   "main": "index.js",
   "scripts": {
     "circom:dev": "hardhat circom --deterministic --debug --verbose",
-    "test": "hardhat test"
+    "test": "hardhat test",
+    "proof": "ts-node scripts/proof.ts"
   },
   "devDependencies": {
     "@types/chai": "^4.3.4",
