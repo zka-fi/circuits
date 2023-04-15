@@ -24,7 +24,7 @@ template cred(levels) {
   // 1. verify user account exist
   component userLeaf = Poseidon(1);
   userLeaf.inputs[0] <== certValue;
-  log("certValue Hash", userLeaf.out);
+  // log("certValue Hash", userLeaf.out);
 
   // 2. verify user account include
   component userTree = treeCheck(levels);

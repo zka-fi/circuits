@@ -23,8 +23,8 @@ template treeCheck(levels) {
     hash[i].inputs[1] <== selectors[i].out[1];
 
     //TODO: delete this part after debugging
-    log("selector-left", selectors[i].out[0]);
-    log("selector-right", selectors[i].out[1]);
-    log("Hash Result:", hash[i].out);
+    // log("selector-left", selectors[i].out[0]);
+    // log("selector-right", selectors[i].out[1]);
+    // log("Hash Result:", hash[i].out);
   }
 }
