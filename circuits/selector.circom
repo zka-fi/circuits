@@ -6,6 +6,6 @@ template selector() {
     signal output out[2];
 
     i * (1 - s) === 0;
-    out[0] <== (in[1] - in[0]) * i + in[0];
-    out[1] <== (in[0] - in[1]) * i + in[1];
+    out[0] <== (inputs[1] - inputs[0]) * i + inputs[0];
+    out[1] <== (inputs[0] - inputs[1]) * i + inputs[1];
 }
