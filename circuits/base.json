@@ -1,3 +1,7 @@
 {
-  "accountRoot": 1
+  "accountRoot": 1,
+  "certValue": 100,
+  "borrowAmount": 80,
+  "leaf": 1,
+  "idx": [1, 2, 3]
 }
